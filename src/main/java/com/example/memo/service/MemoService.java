@@ -58,7 +58,7 @@ public class MemoService {
     @Transactional
     public void deleteById(Long id) {
         if(!memoRepository.existsById(id)) {
-            throw new IllegalArgumentException("없음 ㅅㄱ");
+            throw new IllegalArgumentException("삭제할거 없음 ㅅㄱ");
         }
 
         memoRepository.deleteById(id);
